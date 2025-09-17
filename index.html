@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda El Baratico</title>
+    <link rel="stylesheet" href="/_css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Tienda El Baratico</h1>
+    </header>
+
+    <main>
+        <section class="form-section">
+
+            <fieldset class="form-group">
+                <legend>Valor IVA</legend>
+                <form action="">
+                    <input  type="number" id="valor_iva" name="iva" requiered placeholder="Ingrese porcentage IVA">
+                </form>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Añadir Nuevo Producto</legend>
+                
+                <form id="form-producto" action="" method="post">
+                  
+                    <input  id="nombreproducto" type="text" required placeholder="Nombre Producto">
+                    <input type="number" name="" id="precioproducto" required placeholder="Precio">
+                    <input type="submit" value="Añadir" >    
+
+                    <input type="submit" value="Calcular" >  
+                </form>
+            </fieldset>
+        </section>
+
+        <section class="productos-section">
+            <h2>Lista de Productos</h2>
+        <ul id="lista-productos"></ul>
+        </section>
+
+       
+    </main>
+
+
+    <script src="/_js/script.js" defer></script>
+   
+    
+</body>
+</html>
